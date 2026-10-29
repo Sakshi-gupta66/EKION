@@ -1,0 +1,3 @@
+serviceAccountKey.json
+**/serviceAccountKey.json
+.envgit add .gitignore
