@@ -1,7 +1,7 @@
-import { auth, googleProvider } from '../utils/firebase'
+import { auth, googleProvider } from '../../utils/firebase'
 import React from 'react'
 import { signInWithPopup } from 'firebase/auth'
-import api from '../utils/axios'
+import api from '../../utils/axios'
 
 function Home() {
 
@@ -22,11 +22,13 @@ function Home() {
     await handleLogin(token)
     console.log(data)
   }
-  return <div>
-    <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded' onClick={googleLogin}>
-      Home
-    </button>
-  </div>
+  return(
+    <div className='flex h-screen bg-black text-white overflow-hidden'>
+      <div className='fixed inset-0 z-50 flex flex-col justify-center items-center w-full bg-black/60 backdrop-blur-sm'>
+      
+      </div>
+    </div>
+  )
 }
 
 export default Home
