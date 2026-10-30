@@ -9,8 +9,13 @@ const userschema = new mongoose.Schema({
         type:String,
         required:true
     },
-    email:string,
-    avatar:string,
+    email: {
+        type: String,
+        required: true,
+    },
+    avatar: {
+        type: String,
+  },
 },{
     timestamps:true,
 })
